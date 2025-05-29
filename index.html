@@ -3,196 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClimaExpert | Mantenimiento de Aires Acondicionados | San José del Cabo</title>
+    <title>MantenimientoMC - Especialistas en Aire Acondicionado | SJC, BCS</title>
+    <meta name="description" content="Más de 20 años de experiencia en mantenimiento e instalación de sistemas de aire acondicionado en San José del Cabo, BCS. Servicio profesional y confiable.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#1E3A8A',
-                        secondary: '#3B82F6',
-                        accent: '#10B981',
-                    }
-                }
-            }
-        }
-    </script>
     <style>
         .hero {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1600566752227-868f4c7a1eb4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1600566752227-8f3b9a6f9323?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
             background-size: cover;
             background-position: center;
         }
         
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-        }
-        
-        .testimonial-card {
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             transition: all 0.3s ease;
         }
         
-        .testimonial-card:hover {
-            transform: scale(1.03);
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .logo {
+            transition: all 0.3s ease;
+        }
+        
+        .logo:hover {
+            transform: rotate(5deg);
         }
     </style>
 </head>
-<body class="font-sans antialiased text-gray-800">
-    <!-- Header/Navbar -->
+<body class="font-sans bg-gray-50">
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/525551721942" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center">
-                <i class="fas fa-snowflake text-3xl text-blue-600 mr-2"></i>
-                <span class="text-xl font-bold text-blue-900">Clima<span class="text-blue-500">Expert</span></span>
+            <div class="flex items-center space-x-2">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#38b2ac" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 7a5 5 0 0 0-10 0"></path>
+                        <path d="M12 17a5 5 0 0 0 5-5v-1"></path>
+                        <path d="M12 17a5 5 0 0 1-5-5v-1"></path>
+                        <path d="M12 17v-5"></path>
+                        <path d="M12 22v-1"></path>
+                        <path d="M10 21v-1"></path>
+                        <path d="M14 21v-1"></path>
+                        <path d="M3 12h1"></path>
+                        <path d="M20 12h1"></path>
+                        <path d="M3 5h18"></path>
+                    </svg>
+                </div>
+                <h1 class="text-2xl font-bold text-teal-600">Mantenimiento<span class="text-gray-800">MC</span></h1>
             </div>
-            
             <nav class="hidden md:flex space-x-8">
-                <a href="#inicio" class="text-blue-900 font-medium hover:text-blue-600 transition">Inicio</a>
-                <a href="#servicios" class="text-blue-900 font-medium hover:text-blue-600 transition">Servicios</a>
-                <a href="#nosotros" class="text-blue-900 font-medium hover:text-blue-600 transition">Nosotros</a>
-                <a href="#testimonios" class="text-blue-900 font-medium hover:text-blue-600 transition">Testimonios</a>
-                <a href="#contacto" class="text-blue-900 font-medium hover:text-blue-600 transition">Contacto</a>
+                <a href="#inicio" class="text-gray-700 hover:text-teal-600 font-medium">Inicio</a>
+                <a href="#servicios" class="text-gray-700 hover:text-teal-600 font-medium">Servicios</a>
+                <a href="#nosotros" class="text-gray-700 hover:text-teal-600 font-medium">Nosotros</a>
+                <a href="#contacto" class="text-gray-700 hover:text-teal-600 font-medium">Contacto</a>
             </nav>
-            
-            <div class="md:hidden">
-                <button id="menu-btn" class="text-blue-900 focus:outline-none">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
-            </div>
-        </div>
-        
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
-            <div class="flex flex-col space-y-3">
-                <a href="#inicio" class="text-blue-900 font-medium hover:text-blue-600 transition">Inicio</a>
-                <a href="#servicios" class="text-blue-900 font-medium hover:text-blue-600 transition">Servicios</a>
-                <a href="#nosotros" class="text-blue-900 font-medium hover:text-blue-600 transition">Nosotros</a>
-                <a href="#testimonios" class="text-blue-900 font-medium hover:text-blue-600 transition">Testimonios</a>
-                <a href="#contacto" class="text-blue-900 font-medium hover:text-blue-600 transition">Contacto</a>
-            </div>
+            <button class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="inicio" class="hero min-h-screen flex items-center justify-center text-white">
+    <section id="inicio" class="hero text-white py-20 md:py-32">
         <div class="container mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">Expertos en Mantenimiento de Aires Acondicionados</h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Servicios profesionales de mantenimiento, reparación e instalación en San José del Cabo, BCS. Garantía de calidad y satisfacción.</p>
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Expertos en Aire Acondicionado</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Más de 20 años brindando soluciones climáticas en San José del Cabo, BCS</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#contacto" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
-                    <i class="fas fa-phone-alt mr-2"></i> Contáctanos
+                <a href="https://wa.me/525551721942" class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                    <i class="fab fa-whatsapp mr-2"></i> Contactar por WhatsApp
                 </a>
-                <a href="#servicios" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
-                    <i class="fas fa-tools mr-2"></i> Nuestros Servicios
+                <a href="#contacto" class="bg-white hover:bg-gray-100 text-teal-600 font-bold py-3 px-6 rounded-lg transition duration-300">
+                    <i class="fas fa-phone-alt mr-2"></i> Llamar ahora
                 </a>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="servicios" class="py-16 bg-gray-50">
+    <section id="servicios" class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Nuestros Servicios</h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Ofrecemos soluciones integrales para mantener tu aire acondicionado funcionando al máximo rendimiento.</p>
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Nuestros Servicios</h2>
+                <div class="w-20 h-1 bg-teal-600 mx-auto"></div>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Service 1 -->
-                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
-                    <div class="h-48 bg-blue-100 flex items-center justify-center">
-                        <i class="fas fa-wrench text-6xl text-blue-600"></i>
+                <div class="service-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300 p-6">
+                    <div class="text-teal-600 mb-4">
+                        <i class="fas fa-tools text-4xl"></i>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-blue-900 mb-3">Mantenimiento Preventivo</h3>
-                        <p class="text-gray-600 mb-4">Limpieza profunda, revisión de componentes y lubricación para prevenir fallas y alargar la vida útil de tu equipo.</p>
-                        <ul class="text-gray-600 space-y-2 mb-4">
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Limpieza de filtros</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Revisión de gas refrigerante</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Chequeo eléctrico</li>
-                        </ul>
-                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Mantenimiento Preventivo</h3>
+                    <p class="text-gray-600">Programas de mantenimiento periódico para maximizar la eficiencia y vida útil de tu equipo.</p>
                 </div>
                 
                 <!-- Service 2 -->
-                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
-                    <div class="h-48 bg-blue-100 flex items-center justify-center">
-                        <i class="fas fa-tools text-6xl text-blue-600"></i>
+                <div class="service-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300 p-6">
+                    <div class="text-teal-600 mb-4">
+                        <i class="fas fa-wrench text-4xl"></i>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-blue-900 mb-3">Reparación Correctiva</h3>
-                        <p class="text-gray-600 mb-4">Diagnóstico y solución de problemas en tu aire acondicionado con repuestos originales y mano de obra calificada.</p>
-                        <ul class="text-gray-600 space-y-2 mb-4">
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Fugas de refrigerante</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Fallas eléctricas</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Problemas de compresor</li>
-                        </ul>
-                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Reparaciones</h3>
+                    <p class="text-gray-600">Diagnóstico y solución de fallas en equipos de todas las marcas con repuestos originales.</p>
                 </div>
                 
                 <!-- Service 3 -->
-                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
-                    <div class="h-48 bg-blue-100 flex items-center justify-center">
-                        <i class="fas fa-home text-6xl text-blue-600"></i>
+                <div class="service-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300 p-6">
+                    <div class="text-teal-600 mb-4">
+                        <i class="fas fa-box-open text-4xl"></i>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-blue-900 mb-3">Instalación Profesional</h3>
-                        <p class="text-gray-600 mb-4">Instalación de nuevos equipos con estándares de calidad y seguridad para garantizar óptimo funcionamiento.</p>
-                        <ul class="text-gray-600 space-y-2 mb-4">
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Sistemas split</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Minisplits</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Aire central</li>
-                        </ul>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Instalación</h3>
+                    <p class="text-gray-600">Instalación profesional de nuevos equipos con garantía de trabajo y asesoría técnica.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300 p-6">
+                    <div class="text-teal-600 mb-4">
+                        <i class="fas fa-fan text-4xl"></i>
                     </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Limpieza Profunda</h3>
+                    <p class="text-gray-600">Limpieza interna y externa de equipos para mejorar rendimiento y calidad del aire.</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300 p-6">
+                    <div class="text-teal-600 mb-4">
+                        <i class="fas fa-bolt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Optimización Energética</h3>
+                    <p class="text-gray-600">Asesoría para reducir consumo eléctrico manteniendo el confort climático.</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300 p-6">
+                    <div class="text-teal-600 mb-4">
+                        <i class="fas fa-shield-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Contratos Anuales</h3>
+                    <p class="text-gray-600">Programas de mantenimiento con visitas programadas y descuentos en repuestos.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="nosotros" class="py-16 bg-white">
+    <section id="nosotros" class="py-16 bg-gray-100">
         <div class="container mx-auto px-4">
             <div class="flex flex-col lg:flex-row items-center">
                 <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
-                    <img src="https://images.unsplash.com/photo-1584466977773-e625c37cdd50?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Técnico trabajando" class="rounded-lg shadow-xl w-full">
+                    <img src="https://images.unsplash.com/photo-1581093196277-1d6f2247475b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Equipo de MantenimientoMC" class="rounded-lg shadow-lg w-full">
                 </div>
                 <div class="lg:w-1/2">
-                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">Expertos en Climatización en San José del Cabo</h2>
-                    <div class="w-20 h-1 bg-blue-600 mb-6"></div>
-                    <p class="text-gray-600 mb-6">Con más de 10 años de experiencia en el mercado, ClimaExpert se ha consolidado como líder en servicios de mantenimiento, reparación e instalación de sistemas de aire acondicionado en San José del Cabo y sus alrededores.</p>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">20+ Años de Experiencia en SJC</h2>
+                    <p class="text-gray-600 mb-4">En MantenimientoMC nos especializamos en el mantenimiento, reparación e instalación de sistemas de aire acondicionado residenciales y comerciales en San José del Cabo, Baja California Sur.</p>
+                    <p class="text-gray-600 mb-6">Nuestro equipo de 4 técnicos certificados combina experiencia tradicional con las últimas tecnologías para ofrecer soluciones climáticas eficientes y duraderas.</p>
                     
                     <div class="space-y-4">
                         <div class="flex items-start">
-                            <div class="bg-blue-100 p-3 rounded-full mr-4">
-                                <i class="fas fa-medal text-blue-600 text-xl"></i>
+                            <div class="text-teal-600 mr-3 mt-1">
+                                <i class="fas fa-check-circle"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-blue-900 mb-1">Profesionalismo</h4>
-                                <p class="text-gray-600">Técnicos certificados con amplia experiencia en todas las marcas y modelos.</p>
+                                <h4 class="font-bold text-gray-800">Técnicos Certificados</h4>
+                                <p class="text-gray-600">Personal capacitado por las principales marcas del mercado.</p>
                             </div>
                         </div>
                         
                         <div class="flex items-start">
-                            <div class="bg-blue-100 p-3 rounded-full mr-4">
-                                <i class="fas fa-shield-alt text-blue-600 text-xl"></i>
+                            <div class="text-teal-600 mr-3 mt-1">
+                                <i class="fas fa-check-circle"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-blue-900 mb-1">Garantía</h4>
-                                <p class="text-gray-600">Todos nuestros servicios incluyen garantía escrita por nuestro trabajo.</p>
+                                <h4 class="font-bold text-gray-800">Respuesta Rápida</h4>
+                                <p class="text-gray-600">Servicio de emergencia disponible las 24 horas.</p>
                             </div>
                         </div>
                         
                         <div class="flex items-start">
-                            <div class="bg-blue-100 p-3 rounded-full mr-4">
-                                <i class="fas fa-bolt text-blue-600 text-xl"></i>
+                            <div class="text-teal-600 mr-3 mt-1">
+                                <i class="fas fa-check-circle"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-blue-900 mb-1">Rapidez</h4>
-                                <p class="text-gray-600">Servicio de emergencia disponible las 24 horas para casos urgentes.</p>
+                                <h4 class="font-bold text-gray-800">Garantía de Trabajo</h4>
+                                <p class="text-gray-600">Todos nuestros servicios incluyen garantía escrita.</p>
                             </div>
                         </div>
                     </div>
@@ -201,271 +220,66 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonios" class="py-16 bg-gray-50">
+    <!-- Testimonials -->
+    <section class="py-16 bg-teal-600 text-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Lo que dicen nuestros clientes</h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Clientes satisfechos en San José del Cabo y Los Cabos confían en nuestro servicio.</p>
+                <h2 class="text-3xl font-bold mb-4">Clientes Satisfechos</h2>
+                <div class="w-20 h-1 bg-white mx-auto"></div>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Testimonial 1 -->
-                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                <div class="bg-white bg-opacity-10 rounded-lg p-6">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
-                            <i class="fas fa-user text-blue-600 text-xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-blue-900">Roberto Mendoza</h4>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                        <div class="text-yellow-300 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic">"Excelente servicio de mantenimiento para mi minisplit. Llegaron puntuales, hicieron un trabajo impecable y dejaron todo limpio. Mi aire ahora funciona mejor que nunca. ¡Totalmente recomendados!"</p>
+                    <p class="italic mb-4">"Excelente servicio. Llegaron puntuales, hicieron un trabajo impecable y dejaron todo limpio. Recomiendo 100% a MantenimientoMC."</p>
+                    <div class="font-bold">- Roberto M., Hotel en SJC</div>
                 </div>
                 
                 <!-- Testimonial 2 -->
-                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                <div class="bg-white bg-opacity-10 rounded-lg p-6">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
-                            <i class="fas fa-user text-blue-600 text-xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-blue-900">María González</h4>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                        <div class="text-yellow-300 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic">"Tuve una fuga en mi aire acondicionado central y los técnicos de ClimaExpert lo resolvieron en menos de una hora. Muy profesionales y con precios justos. Definitivamente los llamaré para el mantenimiento anual."</p>
+                    <p class="italic mb-4">"Contraté su servicio anual y la diferencia en el rendimiento de mis equipos es notable. Además bajó mi recibo de luz."</p>
+                    <div class="font-bold">- Laura G., Residencial</div>
                 </div>
                 
                 <!-- Testimonial 3 -->
-                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                <div class="bg-white bg-opacity-10 rounded-lg p-6">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
-                            <i class="fas fa-user text-blue-600 text-xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-blue-900">Carlos Ramírez</h4>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
+                        <div class="text-yellow-300 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic">"Instalaron 3 minisplits en mi casa y quedé impresionado con la limpieza del trabajo y la explicación detallada del funcionamiento. El equipo ha trabajado perfectamente desde entonces. Muy contento con el servicio."</p>
+                    <p class="italic mb-4">"Repararon mi minisplit en menos de una hora cuando otros técnicos no encontraban la falla. Profesionales y honestos."</p>
+                    <div class="font-bold">- Carlos P., Oficina</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contacto" class="py-16 bg-blue-900 text-white">
+    <section id="contacto" class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Contáctanos</h2>
-                <div class="w-20 h-1 bg-white mx-auto mb-6"></div>
-                <p class="text-lg max-w-3xl mx-auto">Estamos listos para atender tus necesidades de climatización en San José del Cabo, BCS.</p>
-            </div>
-            
-            <div class="flex flex-col lg:flex-row gap-8">
-                <div class="lg:w-1/2">
-                    <form class="space-y-6">
-                        <div>
-                            <label for="name" class="block mb-2 font-medium">Nombre completo</label>
-                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg bg-blue-800 border border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Tu nombre">
-                        </div>
-                        
-                        <div>
-                            <label for="email" class="block mb-2 font-medium">Correo electrónico</label>
-                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg bg-blue-800 border border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="tu@email.com">
-                        </div>
-                        
-                        <div>
-                            <label for="phone" class="block mb-2 font-medium">Teléfono</label>
-                            <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg bg-blue-800 border border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="624-xxx-xxxx">
-                        </div>
-                        
-                        <div>
-                            <label for="service" class="block mb-2 font-medium">Servicio requerido</label>
-                            <select id="service" class="w-full px-4 py-3 rounded-lg bg-blue-800 border border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                                <option value="">Selecciona un servicio</option>
-                                <option value="mantenimiento">Mantenimiento preventivo</option>
-                                <option value="reparacion">Reparación correctiva</option>
-                                <option value="instalacion">Instalación de equipo</option>
-                                <option value="emergencia">Servicio de emergencia</option>
-                                <option value="otro">Otro</option>
-                            </select>
-                        </div>
-                        
-                        <div>
-                            <label for="message" class="block mb-2 font-medium">Mensaje</label>
-                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg bg-blue-800 border border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Describe tu necesidad..."></textarea>
-                        </div>
-                        
-                        <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
-                            <i class="fas fa-paper-plane mr-2"></i> Enviar mensaje
-                        </button>
-                    </form>
-                </div>
-                
-                <div class="lg:w-1/2">
-                    <div class="bg-blue-800 p-8 rounded-lg h-full">
-                        <h3 class="text-2xl font-bold mb-6">Información de contacto</h3>
-                        
-                        <div class="space-y-6">
-                            <div class="flex items-start">
-                                <div class="bg-blue-700 p-3 rounded-full mr-4">
-                                    <i class="fas fa-map-marker-alt text-white"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold mb-1">Ubicación</h4>
-                                    <p class="text-blue-200">Av. Paseo de los Cabos #123, Col. Centro, San José del Cabo, BCS</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <div class="bg-blue-700 p-3 rounded-full mr-4">
-                                    <i class="fas fa-phone-alt text-white"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold mb-1">Teléfonos</h4>
-                                    <p class="text-blue-200">624-123-4567</p>
-                                    <p class="text-blue-200">624-987-6543 (Emergencias)</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <div class="bg-blue-700 p-3 rounded-full mr-4">
-                                    <i class="fas fa-envelope text-white"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold mb-1">Correo electrónico</h4>
-                                    <p class="text-blue-200">contacto@climaexpert.com</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <div class="bg-blue-700 p-3 rounded-full mr-4">
-                                    <i class="fas fa-clock text-white"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold mb-1">Horario de atención</h4>
-                                    <p class="text-blue-200">Lunes a Viernes: 8:00 am - 6:00 pm</p>
-                                    <p class="text-blue-200">Sábados: 9:00 am - 2:00 pm</p>
-                                    <p class="text-blue-200">Emergencias: 24/7</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="mt-8">
-                            <h4 class="font-bold mb-4">Síguenos en redes sociales</h4>
-                            <div class="flex space-x-4">
-                                <a href="#" class="bg-blue-700 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#" class="bg-blue-700 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" class="bg-blue-700 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition">
-                                    <i class="fab fa-whatsapp"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Section -->
-    <div class="h-96 w-full">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.3731802026!2d-109.69738892412803!3d23.05931031319244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af4a8f2a9df4a1%3A0x4a9a0a4c1e4b0b0b!2sSan%20Jos%C3%A9%20del%20Cabo%2C%20BCS!5e0!3m2!1ses!2smx!4v1689876543210!5m2!1ses!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-blue-950 text-white py-8">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <div class="flex items-center">
-                        <i class="fas fa-snowflake text-3xl text-blue-400 mr-2"></i>
-                        <span class="text-xl font-bold text-white">Clima<span class="text-blue-400">Expert</span></span>
-                    </div>
-                    <p class="text-blue-300 mt-2">Expertos en climatización en San José del Cabo</p>
-                </div>
-                
-                <div class="text-center md:text-right">
-                    <p class="text-blue-300">© 2023 ClimaExpert. Todos los derechos reservados.</p>
-                    <div class="flex justify-center md:justify-end space-x-4 mt-2">
-                        <a href="#" class="text-blue-300 hover:text-white transition">Términos y condiciones</a>
-                        <a href="#" class="text-blue-300 hover:text-white transition">Política de privacidad</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/526241234567" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg transition transform hover:scale-110">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <!-- Scripts -->
-    <script>
-        // Mobile menu toggle
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    // Close mobile menu if open
-                    mobileMenu.classList.add('hidden');
-                    
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        
-        // Form submission (example)
-        const contactForm = document.querySelector('form');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
-                this.reset();
-            });
-        }
-    </script>
-</body>
+                <h2 class="text-3xl font-bold text-gray
 </html>
